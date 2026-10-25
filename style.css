@@ -1,0 +1,68 @@
+body {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+}
+
+h1 {
+  color: #4f46e5;
+}
+
+#search-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#word-input {
+  flex: 1;
+  padding: 0.6rem;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+}
+
+.error {
+  color: #b91c1c;
+  font-weight: bold;
+}
+
+#result {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+#result.hidden {
+  display: none;
+}
+
+/* Added by JavaScript when the displayed word is saved */
+#result.saved {
+  background: #fef3c7;
+}
+
+.part-of-speech {
+  color: #4f46e5;
+  font-style: italic;
+}
+
+.example {
+  color: #6b7280;
+}
+
+#saved-list li {
+  background: #fef3c7;
+  margin-bottom: 0.3rem;
+  padding: 0.3rem;
+}
+
+@media (max-width: 480px) {
+  #search-form {
+    flex-direction: column;
+  }
+}
